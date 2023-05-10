@@ -1,12 +1,35 @@
 import Livro from "../modelo/Livro";
 
-let livros: Array<Livro> = [
-  {codigo:1, codEditora:1, titulo:'Livro 1', resumo:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.', autores:['José Augusto', 'Lucia Ramires'] },
-  {codigo:2, codEditora:2, titulo:'Livro 2', resumo:'Suspendisse potenti. Maecenas non velit auctor, eleifend urna sed, dignissim felis. Quisque aliquet viverra ipsum eu bibendum.', autores:['Paulo Coelho', 'Pat Johnson'] },
-  {codigo:3, codEditora:3, titulo:'Livro 3', resumo:'Proin venenatis turpis vel ipsum bibendum, quis aliquam lectus accumsan. Sed id leo in nisi ornare iaculis ut in nulla.', autores:['Maria Dagostini', 'Liandra Smith'] },
-  {codigo:4, codEditora:4, titulo:'Livro 4', resumo:'teste de resumo.', autores:['João Dagostini', 'Paul Smith'] },
+let livros: Array<Livro> =[
+  {
+    codigo: 1,
+    "codEditora": 1,
+    titulo: "The Clean Architecture: A Craftsman's Guide to Software Structure and Design",
+    resumo: "Mostra como projetar sistemas de software robustos e escaláveis, usando uma arquitetura limpa e orientada a objetos",
+    autores: ["Robert C. Martin"]
+  },
+  {
+    codigo: 2,
+    "codEditora": 2,
+    titulo: "Code Complete: A Practical Handbook of Software Construction",
+    resumo: "Fornece conselhos práticos e técnicas de programação para desenvolvedores que desejam escrever software de alta qualidade",
+    autores: ["Steve McConnell"]
+  },
+  {
+    codigo: 3,
+    "codEditora": 3,
+    titulo: "Refactoring: Improving the Design of Existing Code",
+    resumo: "Ensina técnicas para melhorar a qualidade do código existente, tornando-o mais fácil de entender e manter",
+    autores: ["Martin Fowler", "Kent Beck", "John Brant", "William Opdyke", "Don Roberts"]
+  },
+  {
+    codigo: 4,
+    "codEditora": 4,
+    titulo: "Effective Java",
+    resumo: "Fornece dicas e técnicas para escrever código Java eficiente, robusto e de fácil manutenção",
+    autores: ["Joshua Bloch"]
+  }
 ]
-
 export default class ControleLivro{
   obterLivros():Array<Livro>{
     return livros
