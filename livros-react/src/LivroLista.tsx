@@ -25,7 +25,9 @@ const LinhaLivro = (props:LinhaLivroProps) => {
   return (
     <tr className='table-light'>
       <td>
+        <p>
         {livro.titulo} 
+        </p>
         <button className='btn btn-danger' onClick={() => excluir(livro.codigo)}>Excluir</button>
         </td>
       <td >{livro.resumo}</td>
