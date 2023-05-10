@@ -1,6 +1,6 @@
 export default class Livro {
   codigo: number;
-  codEditora: number; //extends from Editora???
+  codEditora: number;
   titulo: string;
   resumo: string;
   autores: string[];

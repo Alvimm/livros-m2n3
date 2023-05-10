@@ -10,7 +10,7 @@ interface Livro {
 
 interface LinhaLivroProps {
   livro: Livro;
-  excluir: any; //(codigo: number) => void
+  excluir: any;
 }
 
 export const LinhaLivro: React.FC<LinhaLivroProps> = (props) => {
