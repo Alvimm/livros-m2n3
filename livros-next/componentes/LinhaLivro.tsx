@@ -21,7 +21,9 @@ export const LinhaLivro: React.FC<LinhaLivroProps> = (props) => {
   return (
     <tr className='table-light'>
       <td>
+        <p>
         {livro.titulo} 
+        </p>
         <button className='btn btn-danger' onClick={() => excluir(livro.codigo)}>Excluir</button>
       </td>
       <td >{livro.resumo}</td>
