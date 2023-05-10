@@ -1,9 +1,34 @@
 import Livro from "../modelo/Livro";
 
-let livros: Array<Livro> = [
-  {codigo:1, codEditora:1, titulo:'Livro 1', resumo:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.', autores:['José Augusto', 'Lucia Ramires'] },
-  {codigo:2, codEditora:2, titulo:'Livro 2', resumo:'Suspendisse potenti. Maecenas non velit auctor, eleifend urna sed, dignissim felis. Quisque aliquet viverra ipsum eu bibendum.', autores:['Paulo Coelho', 'Pat Johnson'] },
-  {codigo:3, codEditora:3, titulo:'Livro 3', resumo:'Proin venenatis turpis vel ipsum bibendum, quis aliquam lectus accumsan. Sed id leo in nisi ornare iaculis ut in nulla.', autores:['Maria Dagostini', 'Liandra Smith'] },
+let livros: Array<Livro> =[
+  {
+    codigo: 1,
+    codEditora: 1,
+    titulo: "O Senhor dos Anéis",
+    resumo: "A saga de um hobbit que deve levar um anel para destruição antes que caia nas mãos do mal",
+    autores: ["J.R.R. Tolkien"]
+  },
+  {
+    codigo: 2,
+    codEditora: 2,
+    titulo: "O Pequeno Príncipe",
+    resumo: "Um pequeno príncipe de outro planeta visita a Terra e aprende sobre a vida",
+    autores: ["Antoine de Saint-Exupéry"]
+  },
+  {
+    codigo: 3,
+    codEditora: 3,
+    titulo: "1984",
+    resumo: "Um homem se rebela contra um governo opressor que controla todos os aspectos da vida",
+    autores: ["George Orwell"]
+  },
+  {
+    codigo: 4,
+    codEditora: 4,
+    titulo: "A Guerra dos Tronos",
+    resumo: "As famílias nobres de um reino lutam pelo poder em uma terra de fantasia",
+    autores: ["George R. R. Martin"]
+  }
 ]
 
 export default class ControleLivro{
