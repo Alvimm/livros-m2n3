@@ -35,8 +35,10 @@ const LivroDados = () => {
   };
 
   return (
+    <>
+    <style>{`form label{font-size: 2rem;}`}</style>
     <main className="container">
-      <h1 className="my-3">Dados do Livro</h1>
+      <h1 className="my-3 display-2 text-center">Cadastro do Livro</h1>
       <form onSubmit={incluir}>
         <div>
           <label htmlFor="titulo" className="form-label">
@@ -46,7 +48,7 @@ const LivroDados = () => {
             type="text"
             id="titulo"
             value={titulo}
-            className="form-control"
+            className="form-control text-primary-emphasis bg-primary-subtle border border-primary-subtle"
             onChange={e => setTitulo(e.target.value)}
             required
           />
@@ -56,18 +58,18 @@ const LivroDados = () => {
             Resumo
           </label>
           <textarea
-            className="form-control"
+            className="form-control text-primary-emphasis bg-primary-subtle border border-primary-subtle"
             id="resumo"
             value={resumo}
             onChange={e => setResumo(e.target.value)}
             required
-          ></textarea>
+            ></textarea>
         </div>
         <div>
           <label htmlFor="codEditora" className="form-label mt-3">
             Editora
           </label>
-          <select className="form-select" value={codEditora} id="codEditora" onChange={tratarCombo}>
+          <select className="form-select text-primary-emphasis bg-primary-subtle border border-primary-subtle" value={codEditora} id="codEditora" onChange={tratarCombo}>
             {opcoes.map(opcao =>(
               <option key={opcao.value} value={opcao.value}>{opcao.text}</option>
             ))}
@@ -78,19 +80,20 @@ const LivroDados = () => {
             Autores (1 por linha)
           </label>
           <textarea
-            className="form-control"
+            className="form-control text-primary-emphasis bg-primary-subtle border border-primary-subtle"
             id="autores"
             value={autores}
             onChange={e => setAutores(e.target.value)}
             required
-          ></textarea>
+            ></textarea>
         </div>
 
-        <button type="submit" className="btn btn-primary px-3 mt-3">
+        <button type="submit" className="btn btn-outline-primary px-3 mt-3">
           Salvar Dados
         </button>
       </form>
     </main>
+    </>
   );
 };
 
