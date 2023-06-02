@@ -6,17 +6,17 @@ export const Menu:React.FC=()=>{
     <ul className="navbar-nav">
       <li className="nav-item">
         <Link href="/" className="nav-link">
-          Home
+          Homeeeeeeee
         </Link>
       </li>
       <li className="nav-item">
         <Link href="LivroLista" className="nav-link">
-          Catálogo
+          Catálogooooooo
         </Link>
       </li>
       <li className="nav-item">
         <Link href="LivroDados" className="nav-link">
-          Novo
+          Novoooooooo
         </Link>
       </li>
     </ul>
