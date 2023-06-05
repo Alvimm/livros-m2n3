@@ -20,7 +20,7 @@ let livros: Array<Livro> =[
     codEditora: 3,
     titulo: "Refactoring: Improving the Design of Existing Code",
     resumo: "Ensina técnicas para melhorar a qualidade do código existente, tornando-o mais fácil de entender e manter",
-    autores: ["Martin Fowler", "Kent Beck", "John Brant", "William Opdyke", "Don Roberts"]
+    autores: ["Martin Fowler", "Kent Beck", "John Brant"]
   },
   {
     codigo: 4,
