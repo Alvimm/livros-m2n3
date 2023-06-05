@@ -19,7 +19,7 @@ export const LinhaLivro: React.FC<LinhaLivroProps> = (props) => {
   const nomeEditora = controleEditora.getNomeEditora(livro.codEditora);
 
   return (
-    <tr className='table-light'>
+    <tr className='table-dark'>
       <td>
         <p>
         {livro.titulo} 

@@ -10,8 +10,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Menu />
-        <main className="container" >
-          <h1 className='my-3'>Página Inicial</h1>
+        <main className="container bg-black text-light" >
+          <h1 className='my-3 display-2 text-center'>Página Inicial</h1>
         </main>
     </>
   );

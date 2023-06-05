@@ -36,7 +36,14 @@ const LivroLista: NextPage = () => {
     setCarregado(false);
   };
   return (
-    <>
+    <> 
+    <style>
+        {`table{
+          border-radius: 5px;
+          overflow:hidden
+        }
+        `}
+      </style>
       <Menu />
         <Head>
           <title>Loja Next</title>
@@ -44,9 +51,9 @@ const LivroLista: NextPage = () => {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
 
-        <main className="container">
-          <h1 className='my-3'>Catálogo de Livros</h1>
-          <table className="table table-success table-striped">
+        <main className="container bg-black text-light">
+          <h1 className='my-3 display-2 text-center'>Catálogo de Livros</h1>
+          <table className="table table-hover">
             <thead>
               <tr className=" table-dark">
                 <th>Título</th>
