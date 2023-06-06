@@ -6,5 +6,3 @@ Trabalho criado do zero referente ao que foi pedido na Missão Prática (Nível 
 
 
 Página em React:  https://livros-react-alvimm.vercel.app/
-
-Página em Next:  https://livros-next-alvimm.vercel.app/
