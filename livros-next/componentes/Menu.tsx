@@ -7,6 +7,8 @@ import styles from '../styles/Menu.module.css'
 
 export const Menu: React.FC = () => {
   return (
+    // Adicionei React-bootstrap para aplicar de uma maneira mais simples um navbar responsivo
+
     <Navbar collapseOnSelect expand="lg" bg="black" variant="dark" className={styles.navbar}>
       <Container>
         <Navbar.Brand href="">

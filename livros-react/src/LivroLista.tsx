@@ -27,7 +27,7 @@ const LinhaLivro = (props: LinhaLivroProps) => {
       <td>
         <p>{livro.titulo}</p>
         <button
-          className="btn btn-outline-danger"
+          className="btn btn-outline-danger fw-medium"
           onClick={() => excluir(livro.codigo)}
         >
           Excluir
@@ -63,7 +63,8 @@ const LivroLista = () => {
   return (
     <>
       <style>
-        {`table{
+        {`
+        table{
           border-radius: 5px;
           overflow:hidden
         }
@@ -73,7 +74,7 @@ const LivroLista = () => {
         `}
       </style>
       <main className="container">
-        <h1 className="my-3 display-2 text-center">Catálogo de Livros</h1>
+        <h1 className="my-3 display-2 text-center fw-semibold">Catálogo de Livros</h1>
         <table className="table table-hover ">
           <thead>
             <tr>
@@ -83,7 +84,7 @@ const LivroLista = () => {
               <th>Autores</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className='fw-medium'>
             {livros.map((livro) => (
               <LinhaLivro key={livro.codigo} livro={livro} excluir={excluir} />
             ))}

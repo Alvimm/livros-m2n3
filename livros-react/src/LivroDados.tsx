@@ -38,10 +38,10 @@ const LivroDados = () => {
     <>
     <style>{`form label{font-size: 2rem;}`}</style>
     <main className="container">
-      <h1 className="my-3 display-2 text-center">Cadastro do Livro</h1>
+      <h1 className="my-3 display-2 text-center fw-semibold">Cadastro do Livro</h1>
       <form onSubmit={incluir}>
         <div>
-          <label htmlFor="titulo" className="form-label">
+          <label htmlFor="titulo" className="form-label fw-medium">
             Título
           </label>
           <input
@@ -54,7 +54,7 @@ const LivroDados = () => {
           />
         </div>
         <div>
-          <label htmlFor="resumo" className="form-label mt-3">
+          <label htmlFor="resumo" className="form-label mt-3 fw-medium">
             Resumo
           </label>
           <textarea
@@ -66,7 +66,7 @@ const LivroDados = () => {
             ></textarea>
         </div>
         <div>
-          <label htmlFor="codEditora" className="form-label mt-3">
+          <label htmlFor="codEditora" className="form-label mt-3 fw-medium">
             Editora
           </label>
           <select className="form-select text-primary-emphasis bg-primary-subtle border border-primary-subtle" value={codEditora} id="codEditora" onChange={tratarCombo}>
@@ -76,7 +76,7 @@ const LivroDados = () => {
           </select>
         </div>
         <div>
-          <label htmlFor="autores" className="form-label mt-3">
+          <label htmlFor="autores" className="form-label mt-3 fw-medium">
             Autores (1 por linha)
           </label>
           <textarea
@@ -88,7 +88,7 @@ const LivroDados = () => {
             ></textarea>
         </div>
 
-        <button type="submit" className="btn btn-outline-primary px-3 mt-3">
+        <button type="submit" className="btn btn-outline-primary px-3 mt-3 fw-medium">
           Salvar Dados
         </button>
       </form>
